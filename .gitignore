@@ -1,0 +1,4 @@
+.venv
+paramiko.log 
+HardWareStatus.json
+
