@@ -6,27 +6,11 @@ import json
 from datetime import datetime
 
 switch_names = {
-    "10.0.0.2" : "MDF Switch",
-    "192.168.254.3" : "IDF3 Switch",
-    "192.168.254.4" : "IDF4 Switch",
-    "192.168.254.5" : "IDF5 Switch",
-    "192.168.254.6" : "IDF6 Switch",
-    "192.168.254.7" : "IDF7 Switch",
-    "192.168.254.8" : "IDF8 Switch",
-    "192.168.254.9" : "IDF9 Switch",
-    "192.168.254.11" : "IDF11 Switch"
+    "IP address" : "Switch name"
 }
 
 filePath = [
-    r"C:\Users\shaneb\.ssh\mdf",
-    r"C:\Users\shaneb\.ssh\idf3",
-    r"C:\Users\shaneb\.ssh\idf4",
-    r"C:\Users\shaneb\.ssh\idf5",
-    r"C:\Users\shaneb\.ssh\idf6",
-    r"C:\Users\shaneb\.ssh\idf7",
-    r"C:\Users\shaneb\.ssh\idf08",
-    r"C:\Users\shaneb\.ssh\idf9",
-    r"C:\Users\shaneb\.ssh\idf11"
+    r"filepath for rsa key"
     ]
 
 
@@ -37,7 +21,7 @@ for host, key_file in zip(switch_names, filePath):
     try:
         dev = Device(
             host=host,
-            user='sbrennan',
+            user='username',
             ssh_private_key_file=key_file,
             port=22
         )
