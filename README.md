@@ -1,0 +1,1 @@
+# Get Juniper Hardware Status
